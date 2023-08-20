@@ -19,7 +19,7 @@
       <div class="card">
         <div class="card-body">
           <div class="weather-app">
-            <form id="search-form" class="mb-3">
+            <form id="search-form" class="search-form">
               <div class="row">
                 <div class="col-9">
                   <input
@@ -27,10 +27,9 @@
                     placeholder="Type a city name"
                     class="form-input"
                     id="city-input"
-                    autocomplete="off"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-3 p-0">
                   <input
                     type="submit"
                     value="Search"
@@ -49,13 +48,18 @@
             <div class="row">
               <div class="col-6">
                 <div class="weather-temperature">
-                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <img
+                    src="http://openweathermap.org/img/wn/01d@2x.png"
+                    alt="Clear"
+                    id="icon"
+                    class="float-left"
+                  />
                   <div class="float-left">
                     <strong id="temperature">20</strong
                     ><span class="units"
                       ><a href="#" id="celcius-link" class="active">°C</a> |
-                      <a href="#" id="fahrenheit-link">°F</a></span
-                    >
+                      <a href="#" id="fahrenheit-link">°F</a>
+                    </span>
                   </div>
                 </div>
               </div>

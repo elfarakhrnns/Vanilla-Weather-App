@@ -8,7 +8,6 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-
   let days = [
     "Sunday",
     "Monday",
@@ -30,9 +29,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-
-  let celciusTemperature = response.data.main.temp;
-
+  celciusTemperature = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(celciusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -60,7 +57,7 @@ function handleSubmit(event) {
 
 function displayCelciusTemp(event) {
   event.preventDefault();
-  celciusLink.classList.add("active");
+  celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celciusTemperature);
@@ -69,8 +66,7 @@ function displayCelciusTemp(event) {
 function displayFahrenheitTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-
-  celciusLink.classList.remove("active");
+  celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -81,7 +77,7 @@ let celciusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let celciusLink = document.querySelector("#celcius-link");
+let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", displayCelciusTemp);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
