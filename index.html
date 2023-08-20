@@ -9,6 +9,12 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -33,6 +39,7 @@
                   <input
                     type="submit"
                     value="Search"
+                    id="btn"
                     class="btn btn-primary w-100"
                   />
                 </div>
@@ -46,42 +53,39 @@
               </ul>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-7">
                 <div class="weather-temperature">
                   <img
                     src="http://openweathermap.org/img/wn/01d@2x.png"
                     alt="Clear"
                     id="icon"
                     class="float-left"
-                  />
-                  <div class="float-left">
-                    <strong id="temperature">20</strong
-                    ><span class="units"
-                      ><a href="#" id="celcius-link" class="active">°C</a> |
-                      <a href="#" id="fahrenheit-link">°F</a>
-                    </span>
-                  </div>
+                  /><strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celcius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
                 </div>
               </div>
-              <div class="col-6">
-                <ul>
+              <div class="col-5">
+                <ul id="details">
                   <li>Humidity: <span id="humidity">18</span>%</li>
                   <li>Wind: <span id="wind">9</span> km/h</li>
                 </ul>
               </div>
             </div>
           </div>
-          <small>
-            <a
-              href="https://github.com/elfarakhrnns/Vanilla-Weather-App"
-              target="_blank"
-              >Open Source Code</a
-            >
-            by Elfara Khairunnisa
-          </small>
         </div>
       </div>
     </div>
     <script src="app.js"></script>
   </body>
+  <small>
+    <a
+      href="https://github.com/elfarakhrnns/Vanilla-Weather-App"
+      target="_blank"
+      >Open Source Code in Github</a
+    >
+    by Elfara Khairunnisa
+  </small>
 </html>

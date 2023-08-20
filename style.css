@@ -1,5 +1,6 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fad3cf;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h1 {
@@ -27,6 +28,17 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+small {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.btn {
+  background-color: #a696c8;
+  border-color: #a696c8;
+}
+
 .card {
   display: block;
   margin: auto;
@@ -47,11 +59,13 @@ li:first-letter {
   height: 60px;
   margin-right: 0px;
   width: 60px;
+  position: relative;
+  top: -15px;
 }
 
 .weather-temperature strong {
-  font-size: 64px;
-  font-weight: 400;
+  font-size: 54px;
+  font-weight: 300;
   line-height: 2;
 }
 
