@@ -5,7 +5,7 @@ function formatDate(timestamp) {
     hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
-  if (mintes < 10) {
+  if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
@@ -84,7 +84,7 @@ form.addEventListener("submit", handleSubmit);
 let celciusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", displayCelciusTemp);
 
-let fahrenheitLink = document.querySelector("#fahrenheit=link");
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 search("Tokyo");
