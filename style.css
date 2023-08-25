@@ -30,6 +30,7 @@ li:first-letter {
 
 small {
   margin: 0 auto;
+  margin-top: 10px;
   display: block;
   text-align: center;
 }
