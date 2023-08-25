@@ -59,6 +59,13 @@ small {
   margin-top: 24px;
 }
 
+.weather-forecast {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.7;
+  text-align: center;
+}
+
 .weather-temperature img {
   height: 60px;
   margin-right: 0px;
